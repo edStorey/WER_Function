@@ -176,7 +176,7 @@ def wer_ISD(ref, hyp ,debug=False):
             if debug:
                 lines.append("SUB\t" + r[i]+"\t"+h[j])
         elif backtrace[i][j] == OP_INS:
-            numIns += 1
+            Ins += 1
             j-=1
             if debug:
                 lines.append("INS\t" + "****" + "\t" + h[j])
